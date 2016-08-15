@@ -1,0 +1,31 @@
+.image-gallery {
+	
+	text-align: center;
+	padding-top: 3rem;
+	max-width: 100%;
+	
+	.image-wrap {
+		display: block;
+		padding: .5rem;
+	}
+	
+	img {
+		width: 100%;
+		border-radius: 1rem;
+		
+	}
+}
+
+
+@media (min-width: 768px) {
+	
+	.image-gallery {
+		padding-right: .5rem;
+	
+		.image-wrap {
+			display: inline-block;
+			width: 30%;
+		}
+		
+	}
+}

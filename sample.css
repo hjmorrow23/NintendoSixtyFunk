@@ -1,0 +1,151 @@
+/* Page Styles
+================================ */
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.site-wrapper, .main-content {
+  width: 100%;
+  height: 100%; }
+
+/* Heading Styles
+================================= */
+.main-header {
+  height: 45re;
+  background: url("cash.jpg") no-repeat;
+  background-position: 20% 30%;
+  background-size: 100%;
+  padding-bottom: 1rem;
+  position: relative; }
+
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  height: 14%;
+  background: rgba(192, 192, 192, 0.6);
+  z-index: 2; }
+
+.logo, .main-nav { 
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 2rem;
+  z-index: 5; }
+
+.logo {
+  left: 0;
+  padding-left: 1.5rem; }
+  .logo a {
+    text-decoration: none;
+    color: black; }
+
+.main-nav {
+  right: 0;
+  padding-right: 1.5rem;
+  list-style: none;
+  /*li:hover .dropdown{ // makes dropdown visible on hover
+  	left: 0; // Brings dropdown back on screen
+  	
+  	a {
+  		text-decoration:none; //reset persistent hover state styles
+  	}
+  	
+  	
+  	
+  	li {
+  		background:#333; // defines what happens when you hover over every link in submenu
+  		width: 100%;
+  	}
+  }
+  
+  li:hover a { //Creates persistent hover states
+  	background: #6b036;
+  	text-decoration: none;
+  }
+  
+  .dropdown {
+  	background: rgba(255, 255, 255, 0);  // Fix for IE 7 
+  	position: absolute;
+  	left:-9999px;  //  Hide submenu items 
+  	
+  	li {
+  		padding-top: .0625rem;  // Spacing for items  
+  		float: none;	
+  	}
+  	
+  	a {
+  		white-space: nowrap; //Multi-line list with no text wrapping 
+  	}
+  } */ }
+  .main-nav li {
+    display: inline-block;
+    padding-right: 1rem;
+    position: relative; }
+  .main-nav a {
+    display: block;
+    padding: .3125rem;
+    text-decoration: none;
+    color: black; }
+  .main-nav a:hover {
+    color: white;
+    text-decoration: none; }
+
+.main-content {
+  background: white;
+  padding: 3.125rem;
+  height: 100%; }
+
+.intro {
+  padding: 3.5rem; }
+
+.main-col {
+  display: inline-block;
+  width: 60%;
+  height: 100%; }
+
+.side-col {
+  padding-left: 5rem;
+  display: inline-block;
+  width: 40%;
+  height: 100%;
+  float: right; }
+  .side-col ul {
+    list-style: katakana;
+    list-style-position: inside; }
+  .side-col a {
+    text-decoration: none;
+    color: black; }
+
+.footer-wrapper {
+  background: rgba(192, 192, 192, 0.6);
+  padding: 2rem; }
+
+.footer-logo {
+  display: block;
+  padding: .5rem; }
+
+.footer-nav {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  .footer-nav li {
+    display: inline-block;
+    padding-left: .5rem;
+    padding-right: .5rem; }
+  .footer-nav a {
+    text-decoration: none;
+    color: black; }
+  .footer-nav a:hover {
+    color: white; }
+
+.footer-logo, .footer-nav {
+  text-align: center; }
+
+@media (max-width: 768px) {
+  .main-content {
+    padding-bottom: 1rem; }
+
+  .main-col, .side-col {
+    display: inline-block;
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */

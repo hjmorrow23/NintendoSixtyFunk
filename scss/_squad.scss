@@ -1,0 +1,63 @@
+/* Profile Styles
+================================= */
+
+.profile {
+	
+	padding-top: 2rem;
+	padding-bottom: 5rem;
+	
+	//Profile Header
+	
+	h2 {
+		display: block;
+		padding-bottom: 3rem;
+		text-align: center;
+	}
+	
+	//Profile Info
+		
+	.description, .image-wrapper {
+		padding: 1rem;
+		display: block;
+	}
+	
+	//Profile Photo
+	
+	img {
+		//position: relative;
+		//left: 20%;
+		width: 20rem;
+		height: 20rem;
+		border-radius: 1rem;
+		box-shadow: 0 1px 5px rgba(0, 0, 0, .3);
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+}
+
+@media (min-width: 768px) {
+	
+	/* Large Screen Style Differences
+	================================= */
+	
+	.profile {
+		
+		
+		.description {
+			display: inline-block;
+			float: right;
+			position: relative;
+			top: 4rem;
+			text-align: center;
+			width: 40%;
+		}	
+	
+	
+		.image-wrapper {
+			display: inline-block;
+			width: 60%;
+		}
+	}
+
+}
