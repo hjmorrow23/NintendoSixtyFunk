@@ -2,9 +2,9 @@
 function get_event_html($id,$item) {
     $output =  '<h5 class="event-header">' . $item['title'] . '</h5>		
 				<ul>
-					<li class="place"><a href="#">' . $item['location'] . '</a></li>
-					<li class="date"><a href="#">' . $item['dateDisplay'] . '</a></li>
-					<li class="time"><a href="#">' . $item['time'] . '</a></li>
+					<li class="place"><a href="' . $item['locationUrl'] . '">' . $item['location'] . '</a></li>
+					<li class="date">' . $item['dateDisplay'] . '</li>
+					<li class="time">' . $item['time'] . '</li>
 				</ul>
 				<div class="break">
 		          <hr>
@@ -31,7 +31,10 @@ function get_news_html($id,$item) {
 				<p>" . $item['postShort'] . "</p>
 				<p>" . $item['dateDisplay'] . "</p>
 				<a href='article.php?id=" . $id . "'>Read More &#62;</a>
-				</div>";
+				</div>
+				<div class='break'>
+		          <hr>
+		        </div>";
 		    return $output;
 }
 
@@ -52,18 +55,21 @@ function array_news_category($news,$title) {
         }
     }
     
-    asort($output);
+    arsort($output);
     return array_keys($output);
 }
 
 function get_profile_html($id,$item) {
-    $output = "<div class='profile' id='" . $item['css-id'] . "'>
+    $output = "<div class='profile'  'id='" . $item['css-id'] . "'>
 				<h2 class='main-col-header'>" . $item['name'] . "</h2> 
 				<div class='image-wrapper'><img src='" . $item['img'] . "'></div>
 				<div class='description'>
 					<p>" . $item['description'] . "</p>
 				</div>
-			</div>";
+			</div>
+			<div class='break'>
+		          <hr>
+		    </div>";
 		    return $output;
 }
 

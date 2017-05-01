@@ -12,6 +12,7 @@
     <!-- Stylesheets and Resets -->
     
     <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     
 </head>
@@ -31,11 +32,20 @@
 								<li><a href="media.php" <?php if ($pageTitle == "Media") { echo 'class="selected"';} ?>>Media</a></li>
 								<li><a href="photos.php" <?php if ($pageTitle == "Gallery") { echo 'class="selected"';} ?>>Photos</a></li>
 								<li><a href="news.php" <?php if ($pageTitle == "News") { echo 'class="selected"';} ?>>News</a></li>
+								<li><a href="contact.php" <?php if ($pageTitle == "Contact") { echo 'class="selected"';} ?>>Book</a></li>
 							</ul>
 						</nav>
 						<a href="#" class="menu-icon">&#9776;</a>
 					</div>
 				<div class="main-heading"><?php echo $pageHeading; ?></div>
-				<!-- <div class="heading-item"></div> -->
+				<?php 
+		    if(isset($pageHeadingLink)) {
+	          echo 
+	          '<!--Title Link-->
+	          <div class="heading-item">
+	            <a href="' . $pageHeadingLinkUrl . '">' . $pageHeadingLink . '</a>
+	          </div>';
+	        }
+	        ?>            
 			</div>
 

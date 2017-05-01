@@ -9,31 +9,34 @@
 	//Profile Header
 	
 	h2 {
+		text-align: center;
 		display: block;
 		padding-bottom: 3rem;
-		text-align: center;
 	}
 	
 	//Profile Info
 		
 	.description, .image-wrapper {
-		padding: 1rem;
 		display: block;
+		padding: 1rem;
 	}
 	
 	//Profile Photo
 	
 	img {
-		//position: relative;
-		//left: 20%;
+		display: block;
 		width: 20rem;
-		height: 20rem;
-		border-radius: 1rem;
-		box-shadow: 0 1px 5px rgba(0, 0, 0, .3);
+		height: auto;
 		margin-left: auto;
 		margin-right: auto;
-		display: block;
+		border-radius: 1rem;
+		box-shadow: 0 1px 5px rgba(0, 0, 0, .3);
 	}
+}
+
+.grey-background {
+	width: auto;
+	background-color: rgba(33,33,33,.4);
 }
 
 @media (min-width: 768px) {
@@ -45,11 +48,11 @@
 		
 		
 		.description {
-			display: inline-block;
-			float: right;
 			position: relative;
-			top: 4rem;
+			top: 0;
 			text-align: center;
+			float: right;
+			display: inline-block;
 			width: 40%;
 		}	
 	

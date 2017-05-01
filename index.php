@@ -5,6 +5,8 @@ include("inc/functions.php");
 	
 $pageTitle = "Home";
 $pageHeading = "Nintendo Sixty Funk";
+$pageHeadingLink = "Book a Gig";
+$pageHeadingLinkUrl = "contact.php";
 
 include('inc/header.php'); 
 ?>	
@@ -14,7 +16,7 @@ include('inc/header.php');
 				
 				<div class="intro">
 					<h1 class="intro-header">Intro</h1>
-					<p>You wanna know how I got them? So I had a wife. She was beautiful, like you, who tells me I worry too much, who tells me I ought to smile more, who gambles and gets in deep with the sharks. Hey. One day they carve her face. And we have no money for surgeries. She can't take it. I just wanna see her smile again. I just want her to know that I don't care about the scars. So, I do this to myself. And you know what? She can't stand the sight of me. She leaves. Now I see the funny side. Now I'm always smiling.</p>
+					<p>Nintendo Sixty Funk is a 4 member band based in the Holland/Chicago-land area playing a variety of covers, from the 80's - 2000's. The band originated in the summer of 2015, and has been playing Bars, Restaurants, Weddings, Receptions, Parties and church services ever since! Book NSF today!.</p>
 				</div>
 				<div class="main-col">
 					<h2 id="first-col-header">News</h2>
@@ -41,6 +43,8 @@ include('inc/header.php');
 			        
 			        
 				</div>
+				
+				<!-- 	Right Sidebar	 -->
 				<div class="side-col">
 					<h3 class="side-col-header">Events</h3>	
 					<?php 
@@ -81,6 +85,7 @@ include('inc/header.php');
 			          <hr>
 			        </div>
 -->
+					<!-- 	Soundcloud Module	 -->
 					<div class="soundcloud">
 					<iframe width="90%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/197732688&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe> 
 					</div>

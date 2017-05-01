@@ -1,0 +1,40 @@
+.form-block {
+	display: block;
+	vertical-align: middle;
+	text-align: center;
+	width: 100%;
+}
+
+form label {
+	text-align: left;
+	float: none;
+	display: inline-block;
+	width: 180px;
+    padding: 0;
+    margin: 5px 0 0;
+}
+
+form input[type=text],
+form textarea {
+	float: none;
+	display: inline-block;
+    width: auto;
+    margin: 15px 0 0 10px; 
+    padding: 5px 5px;
+	-webkit-box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.16);
+	-moz-box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.16);
+	box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.16);
+	
+}
+
+form textarea {
+	position: relative;
+	top:20px;
+}
+
+form input[value="Send"] {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	margin-top: 2em;
+}
